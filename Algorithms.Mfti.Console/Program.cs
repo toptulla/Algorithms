@@ -13,12 +13,19 @@ namespace Algorithms.Mfti.Console
 {
     class Program
     {
-        static void Main()
+        static void Main1()
         {
             //SumNumbers();
             //SqrtNumbers();
             //InsertionSortingWithStats();
             //MergeSort();
+
+            var numbers = new[] { 1, 8, 2, 1, 4, 7, 3, 2, 3, 6 };
+            var sorter = new MergeSorter();
+
+            int count = sorter.GetInversionCount(numbers);
+
+            System.Console.WriteLine(count);
         }
 
         private static void MergeSort()
