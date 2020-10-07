@@ -7,7 +7,7 @@ namespace Algorithms.Mfti.Console
 {
     class Program1
     {
-        static void Main()
+        static void Main1()
         {
             string input = null;
             using (var file = File.OpenRead("input1.txt"))
@@ -104,33 +104,6 @@ namespace Algorithms.Mfti.Console
                 }
                 else
                 {
-                    //if (flag)
-                    //{
-                    //    int n = 0;
-
-                    //    for (int i = aIndex; i < afterA; i++)
-                    //    {
-                    //        int value = input[i];
-                    //        int bottom = bIndex + n;
-                    //        int top = afterB;
-                    //        int mid = (bIndex + afterB - 1) / 2;
-                    //        if (value > input[mid])
-                    //            bottom = mid;
-                    //        else
-                    //            top = mid;
-                    //        for (int j = bottom; j < top; j++)
-                    //        {
-                    //            if (value > input[j])
-                    //            {
-                    //                n++;
-                    //            }
-                    //        }
-
-                    //        count += n;
-                    //    }
-
-                    //    flag = false;
-                    //}
                     if (flag)
                     {
                         for (int i = aIndex; i < afterA; i++)

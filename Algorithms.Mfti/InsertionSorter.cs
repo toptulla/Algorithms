@@ -3,8 +3,15 @@ using System.IO;
 
 namespace Algorithms.Mfti
 {
+    /// <summary>
+    /// Сортировка вставками.
+    /// </summary>
     public class InsertionSorter
     {
+        /// <summary>
+        /// Простая сортировка вставками.
+        /// </summary>
+        /// <param name="input">Массив для сортировки.</param>
         public void Sort(int[] input)
         {
             for (int i = 0; i < input.Length - 1; i++)
@@ -20,6 +27,11 @@ namespace Algorithms.Mfti
             }
         }
 
+        /// <summary>
+        /// Сортировка с логированием позиции, на которую был перемещен i-й элемент во время его обработки.
+        /// </summary>
+        /// <param name="input">Массив для сортировки.</param>
+        /// <returns>Массив новых позиций элементов исходного массива</returns>
         public int[] SortWithPositions(int[] input)
         {
             var positions = new int[input.Length];
@@ -42,6 +54,11 @@ namespace Algorithms.Mfti
             return positions;
         }
 
+        /// <summary>
+        /// Сортировка массива + статистика по массиву и вывод исходных позиций элментов статискики в массиве.
+        /// </summary>
+        /// <param name="input">Массив для сортировки.</param>
+        /// <returns>Индексы минимального, среднего и максимального элементов в исходном массиве.</returns>
         public (int min, int avg, int max) SortWithStats(double[] input)
         {
             var inputCopy = new double[input.Length];
@@ -83,6 +100,11 @@ namespace Algorithms.Mfti
             return (min, avg, max);
         }
 
+        /// <summary>
+        /// Сортировка с ведением логов.
+        /// </summary>
+        /// <param name="input">Массив для сортировки.</param>
+        /// <returns>Логи сортировки.</returns>
         public List<string> SortWithLogs(int[] input)
         {
             var result = new List<string>();
@@ -121,6 +143,11 @@ namespace Algorithms.Mfti
             return result;
         }
 
+        /// <summary>
+        /// Сортировка с ведением логов, логи пишутся в файл.
+        /// </summary>
+        /// <param name="input">Массив для сортировки.</param>
+        /// <param name="writer">Писатель в файл.</param>
         public void SortWithLogsWriteLogs(int[] input, StreamWriter writer)
         {
             for (int i = 0; i < input.Length; i++)

@@ -10,7 +10,7 @@ namespace Algorithms.Mfti.Tests
             var numbers = new[] { 4, 6, 1, 7, 5, 6, 4 };
             var sorter = new MergeSorter();
 
-            sorter.Srot(numbers);
+            sorter.Sort(numbers);
 
             Assert.Equal(new[] { 1, 4, 4, 5, 6, 6, 7 }, numbers);
         }
