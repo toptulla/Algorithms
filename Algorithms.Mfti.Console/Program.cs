@@ -118,37 +118,44 @@ namespace Algorithms.Mfti.Console
 
             //-------------
 
-            int n = 5;
-            int range = 1;
-            int[] arr = new[] { 1, 5, 3, 4, 1 };
+            //int n = 5;
+            //int range = 1;
+            //int[] arr = new[] { 1, 5, 3, 4, 1 };
 
-            var needConttinue = false;
-            do
-            {
-                needConttinue = false;
-                for (int i = 0; i + range < n; i++)
-                {
-                    if (arr[i] > arr[i + range])
-                    {
-                        int tmp = arr[i + range];
-                        arr[i + range] = arr[i];
-                        arr[i] = tmp;
-                        needConttinue = true;
-                    }
-                }
-            } while (needConttinue);
+            //var needConttinue = false;
+            //do
+            //{
+            //    needConttinue = false;
+            //    for (int i = 0; i + range < n; i++)
+            //    {
+            //        if (arr[i] > arr[i + range])
+            //        {
+            //            int tmp = arr[i + range];
+            //            arr[i + range] = arr[i];
+            //            arr[i] = tmp;
+            //            needConttinue = true;
+            //        }
+            //    }
+            //} while (needConttinue);
 
-            string result = "YES";
-            for (int i = 0; i + 1 < n; i++)
-            {
-                if (arr[i] > arr[i + 1])
-                {
-                    result = "NO";
-                    break;
-                }
-            }
+            //string result = "YES";
+            //for (int i = 0; i + 1 < n; i++)
+            //{
+            //    if (arr[i] > arr[i + 1])
+            //    {
+            //        result = "NO";
+            //        break;
+            //    }
+            //}
 
-            System.Console.WriteLine(result);
+            //System.Console.WriteLine(result);
+
+            //-------------
+
+            //for (int i = 1; i < 10; i++)
+            //    System.Console.WriteLine($"{1 << i} pow {i}");
+
+            System.Console.WriteLine(40000 * 40000);
         }
 
         private static void PartitionK(int[] input, int left, int right, int k1, int k2)
